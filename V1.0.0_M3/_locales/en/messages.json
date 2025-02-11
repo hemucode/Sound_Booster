@@ -1,0 +1,11 @@
+{
+    "app_name": {
+        "message": "Sound Booster - Ultra Loud"
+    },
+    "app_description": {
+        "message": "Boost your browser's audio up to 600% with a single click. Includes a reset button for quick volume control."
+    },
+    "app_short_name": {
+        "message": "Boost Audio"
+    }
+}
