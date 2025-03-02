@@ -2,10 +2,71 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Popup</title>
+        <title>Sound Booster</title>
         <link rel="stylesheet" type="text/css" href="popup.css">
     </head>
-    <body>
+    <body class="">
+        <header class="header">
+            <div class="header_main">
+                <div class="header_logo">
+                    <div class="header_icon" alt="Sound Booster"></div>
+                    <h1 class="header_name">Sound Booster</h1>
+                </div>
+                <div class="tooglewin">
+                    <input class="type_checkbox" id="toogle" type="checkbox" name="name">
+                    <label class="mode" for="toogle"></label>
+                </div>
+                <div class="reset_button_block"></div>
+                <button type="button" class="reset_button_view"></button>
+
+            </div>
+            <div class="header_description"></div>
+        </header>
+        <div class="sound_btn">
+            <div class="mute_btn">
+                <div class="mute_icon"></div>
+                <span>Mute</span>
+            </div>
+            <div class="hundred_btn">
+                <span>100%</span>
+            </div>
+        </div>
+        <div class="range">
+            <input class="sound_slider" type="range" value="100" min="0" max="600">
+        </div>
+        <div class="sound_info">
+          <span class="sound_info_min">0 %</span>
+          <span class="sound_info_minus">-10</span>
+          <span class="sound_info_current">Volume
+            <span id="sound_current" class="sound_info_current_value">100</span> %
+          </span>
+          <span class="sound_info_plus">+10</span>
+          <span class="sound_info_max">600 %</span>
+        </div>
+        <div class="tabs_icon" alt="Sound Booster"/>
+        <div class="tabs">
+            <div class="tabs_title">No tabs playing  audio right now</div>
+            <div class="tabs_list"></div>
+        </div>
+        <template id="template_tab">
+          <div class="tab">
+            <div class="tab_item tab_icon">
+              <img class="tab_image" />
+            </div>
+            <div class="tab_item tab_title"></div>
+          </div>
+        </template>
+        <div class="privacy_block">
+            To improve the sound quality, please keep this window open. This is due to privacy requirements by the browser.
+        </div>
+        <div class="footer">
+            <div class="footer_text"> v.1.0.2</div>
+            <div class="footer_rate">
+                <div class="rate_icon"></div>
+                <span>Please, rate us!</span>
+            </div>
+
+        </div>
     </body>
     <script src="popup.js"></script>
 </html>

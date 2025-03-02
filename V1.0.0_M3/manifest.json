@@ -3,7 +3,7 @@
     "name": "__MSG_app_name__",
     "short_name": "__MSG_app_short_name__",
     "description": "__MSG_app_description__",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "default_locale": "en",
     "permissions": [
         "tabs",
@@ -24,18 +24,19 @@
             "js": [
                 "content-script.js"
             ],
-            "run_at": "document_start",
-            "all_frames": true
+            "css": [
+                "content-style.css"
+            ],
+            "run_at": "document_start"
         }
     ],
     "action": {
-        "default_icon": [
-            "data/icons/128.png",
-            "data/icons/64.png",
-            "data/icons/48.png",
-            "data/icons/32.png"
-        ],
-        "default_popup": "data/interface/popup.html",
+        "default_icon": {
+            "128": "data/icons/128.png",
+            "64": "data/icons/64.png",
+            "48":"data/icons/48.png",
+            "32":"data/icons/32.png"
+        },
         "default_title": "__MSG_app_name__"
     },
     "icons": {
